@@ -1,0 +1,38 @@
+
+<button *ngIf=!isOn (click) ="toggleAddress()" class="SignIn">Sign In</button>
+<button class="SignUp">Sign Up</button>
+
+<br><br><br>
+<br><br>      
+          <div *ngIf="isOn">
+          <form>           
+            <div class="form-group">               
+          <label> Enter your Email Id</label><br>
+          <input required
+            ngModel 
+            name="Email ID"
+            #Email ID="ngModel"
+            id="Email ID" 
+            type="text" 
+            placeholder="Your Email Id">
+            </div>
+          </form>
+          </div>
+            <div *ngIf="isOn">
+            <form>
+                <div class="form-group">
+                  <label> Enter your password</label><br>
+              <input required
+               ngModel 
+               name="password"
+              #userName="ngModel" 
+              id="password" 
+              type="text" 
+               
+              placeholder="Your password">
+              </div>   
+              </form>
+            </div>
+            <button *ngIf="isOn" (click)="toggleAddress()">Log In</button>
+    
+   

@@ -1,0 +1,27 @@
+
+.SignUp {
+    border: 1px solid rgb(5, 141, 146);
+    float:right;
+    background-color: inherit;
+    padding: left;
+    font-size: 20px;
+    cursor: progress;
+    display: inline-block;
+  }
+  
+  .SignIn {
+    border: 1px solid rgb(9, 139, 190);
+    float:right;
+    background-color: inherit;
+    padding: left;
+    font-size: 20px;
+    cursor: progress;
+    display: inline-block;
+  }
+  
+  .form-group{
+    border:2px slateblue;
+    float:center;
+    background-color:tan;
+    padding-left: 1px;
+  }
