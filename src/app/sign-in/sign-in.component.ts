@@ -1,8 +1,5 @@
 
 import { Component, OnInit, Input } from '@angular/core';
-import { Customer } from './Customer';
-
-
 
 @Component({
   selector: 'app-sign-in',
@@ -13,9 +10,9 @@ import { Customer } from './Customer';
 export class SignInComponent implements OnInit {
   Customer : any;
   isOn:boolean=false;
-  @Input('Customer') customer :Customer;
-  constructor() { 
-
+  notOn:boolean=false;
+  
+  constructor() {
   }
 
   ngOnInit(): void {
@@ -23,4 +20,8 @@ export class SignInComponent implements OnInit {
 toggleAddress(){
   this.isOn=!this.isOn;
 }
+  toggle(){
+  this.notOn=!this.notOn;
 }
+}
+
